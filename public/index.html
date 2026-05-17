@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPM HR Management System (Starter)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
+
+    <main class="relative mx-auto max-w-7xl p-6 md:p-10">
+      <header class="mb-8 rounded-2xl border border-slate-800 bg-slate-900/80 p-6 backdrop-blur">
+        <p class="text-xs uppercase tracking-widest text-cyan-400">Prime Practice Management</p>
+        <h1 class="mt-2 text-2xl font-bold md:text-3xl">HR, Attendance, Leave & Upwork Withdrawal System</h1>
+        <p class="mt-3 text-slate-300">Node.js + Tailwind starter created (Flutter removed approach). Database integration is intentionally disabled for now.</p>
+      </header>
+
+      <section class="grid gap-4 md:grid-cols-4">
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4"><p class="text-xs text-slate-400">Backend</p><p class="mt-1 font-semibold">Node.js (Express)</p></div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4"><p class="text-xs text-slate-400">UI</p><p class="mt-1 font-semibold">Tailwind CSS</p></div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4"><p class="text-xs text-slate-400">Database</p><p class="mt-1 font-semibold text-amber-300">Not connected yet</p></div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4"><p class="text-xs text-slate-400">Status</p><p class="mt-1 font-semibold text-emerald-300">Phase 1 Started</p></div>
+      </section>
+
+      <section class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <h2 class="text-lg font-semibold">Auth + Security</h2>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-300">
+            <li>Employee ID + Password login screen (UI planned)</li>
+            <li>2 failed attempts warning</li>
+            <li>3 failed attempts account block</li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <h2 class="text-lg font-semibold">Attendance + Breaks</h2>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-300">
+            <li>9-hour shift model</li>
+            <li>75-minute shared break pool</li>
+            <li>Short-time formula ready for implementation</li>
+          </ul>
+        </article>
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <h2 class="text-lg font-semibold">Upwork Withdrawal Module</h2>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-300">
+            <li>Operator accounts management</li>
+            <li>USD withdrawals logging</li>
+            <li>Admin totals + exports (later phase)</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="mt-10 rounded-xl border border-cyan-900/50 bg-cyan-950/30 p-4 text-sm text-cyan-100">
+        Next step: I can build the full module structure page-by-page (Login, Employee, HR, Admin, Upwork) with local mock data first, then connect database later.
+      </footer>
+    </main>
+  </body>
+</html>
